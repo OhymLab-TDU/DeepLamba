@@ -895,28 +895,6 @@ if __name__ == '__main__':
     print(f"Deeplamba FLOPs: {Gflops}")
     print(parameter_count_table(model))
 
-
-
-    from monai.networks.nets import SegResNet
-
-
-
-    model = SegResNet(
-            spatial_dims = 2,
-            init_filters = 32,
-            in_channels = 3,
-            out_channels = 13,
-            blocks_down = [1, 2, 2, 4],
-            blocks_up = [1, 1, 1]
-        )
-    
-    if torch.cuda.is_available():
-        model = model.cuda()
-
-    Gflops, unsupported = flop_count(model=model, inputs=(x,), supported_ops=supported_ops)
-    print(f"SegResNet FLOPs: {Gflops}")
-    print(parameter_count_table(model))
-
 # #    summary(model, (3, 512, 512))
 #     state_dict = model.state_dict()
 #     print(state_dict.keys())
