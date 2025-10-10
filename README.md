@@ -57,6 +57,8 @@ bash scripts/train_AbdomenMR.sh nnUNetTrainerDeepLamba
 bash scripts/train_Microscopy.sh nnUNetTrainerDeepLamba
 ```
 
+About Flops and Params calculation, we follow the [issues110](https://github.com/state-spaces/mamba/issues/110) method.
+
 ## Acknowledgements
 
 We thank the authors of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet), [Mamba](https://github.com/state-spaces/mamba), [UMamba](https://github.com/bowang-lab/U-Mamba), [VMamba](https://github.com/MzeroMiko/VMamba), and [Swin-Umamba](https://github.com/JiarunLiu/Swin-UMamba/tree/main) for making their valuable code & data publicly available.
