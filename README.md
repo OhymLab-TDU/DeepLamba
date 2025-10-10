@@ -39,5 +39,43 @@ cd DeepLamba/deeplamba
 pip install -e .
 ```
 
+## Dataset Prepare
+We follow the [U-mamba](https://github.com/bowang-lab/U-Mamba?tab=readme-ov-file) dataset. 
+First, download datasets from [U-Mamba](https://drive.google.com/drive/folders/1DmyIye4Gc9wwaA7MVKFVi-bWD2qQb-qN?usp=sharing).
+Second, put datasets into data folder and do preprocess by 
+```shell
+nnUNetv2_plan_and_preprocess -d DATASET_ID --verify_dataset_integrity
+```
+
+## Training 
+We use the [Swin-Umamba](https://github.com/JiarunLiu/Swin-UMamba/tree/main) scripts. We can train DeepLamba by executing:
+
+```shell
+# AbdomenMR dataset
+bash scripts/train_AbdomenMR.sh nnUNetTrainerDeepLamba
+# Microscopy dataset 
+bash scripts/train_Microscopy.sh nnUNetTrainerDeepLamba
+```
+
+## Acknowledgements
+
+We thank the authors of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet), [Mamba](https://github.com/state-spaces/mamba), [UMamba](https://github.com/bowang-lab/U-Mamba), [VMamba](https://github.com/MzeroMiko/VMamba), and [Swin-Umamba](https://github.com/JiarunLiu/Swin-UMamba/tree/main) for making their valuable code & data publicly available.
+
+## Citation
+
+```
+@article{sun2025deeplamba,
+  title={DeepLamba: Efficient Mamba-Based Model for Medical Image Segmentation},
+  author={Sun, Shizhe and Ohyama, Wataru},
+  journal={SN Computer Science},
+  volume={6},
+  number={6},
+  pages={734},
+  year={2025},
+  publisher={Springer}
+}
+```
+
+
 
 
