@@ -1,5 +1,5 @@
 # DeepLamba: Efficient Mamba‑Based Model for Medical Image Segmentation
-Official paper repository for: *[DeepLamba: Efficient Mamba‑Based Model for Medical Image Segmentation](https://link.springer.com/article/10.1007/s42979-025-04267-9)*
+Official paper repository for: *[DeepLamba: Efficient Mamba‑Based Model for Medical Image Segmentation(SN Computer Science 2025](https://link.springer.com/article/10.1007/s42979-025-04267-9)*
 
 Deeplamba Architecture:
 ![network](https://github.com/OhymLab-TDU/DeepLamba/blob/main/image/DeepLamba_architecture.png)
